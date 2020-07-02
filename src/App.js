@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Footer from "./footer"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <main className="main">
+        <header>
+          <img src="https://cdn.iconscout.com/icon/free/png-512/back-arrow-1767523-1502427.png"
+               alt="back arrow"/>
+        </header>
+
+        <div className="header_name">
+          <p>Person</p>
+        </div>
+
+        <div id="right_bubble">Yes</div>
+        <div id="left_bubble_1">Message 1</div>
+        <div id="left_bubble_2">Message 2</div>
+
+        <Footer />
+      </main>
   );
 }
 

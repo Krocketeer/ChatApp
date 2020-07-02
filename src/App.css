@@ -1,38 +1,122 @@
-.App {
+html, #root {
+  height: 100%;
+  width: 100%;
+  disply: flex;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background: rgb(26, 26, 27);
+  color:white;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 56px;
+  width: 100%;
+  border-bottom: 2px solid rgb(64, 63, 65);
 }
 
-.App-link {
-  color: #61dafb;
+header img {
+  position: fixed;
+  height: 32px;
+  margin: 13px 3px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(103%) contrast(101%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  border-top: 2.5px solid rgb(64, 63, 65);
 }
+
+footer input {
+  border-top: 2px solid rgb(64, 63, 65);
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  width: 82%;
+  bottom: 11px;
+  left: 14px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid rgb(192, 192, 193);
+}
+
+#message_bar img {
+  cursor: pointer;
+  position: relative;
+  position: fixed;
+  right: 0;
+  height: 50px;
+  bottom: 2px;
+  filter: invert(70%) sepia(63%) saturate(554%) hue-rotate(76deg) brightness(86%) contrast(93%);
+}
+
+.header_name {
+  position: fixed;
+  font-family: Raleway;
+  font-size: 24px;
+  left: 35px;
+  top: -10px;
+}
+
+#left_bubble_1 {
+  position: relative;
+  background: rgb(70, 68, 87);
+  text-align: left;
+  padding: 10px;
+  width: 40%;
+  /*top: 100px;*/
+  margin: 0px 180px 15px 0px;
+  border-radius: 15px;
+}
+
+#left_bubble_2 {
+  position: relative;
+  background: rgb(70, 68, 87);
+  text-align: left;
+  padding: 10px;
+  width: 60%;
+  top: 100px;
+  margin: 0px 110px 70px 0px;
+  border-radius: 15px;
+}
+
+
+#right_bubble {
+  position: relative;
+  background: rgb(48, 209, 88);
+  text-align: left;
+  padding: 10px;
+  width: 40%;
+  /*right: -140px;*/
+  top: 80px;
+  left: 180px;
+  /* margin: 0px 0px 0px 0px; */
+  border-radius: 15px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
