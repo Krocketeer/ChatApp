@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Footer from "./footer"
+import Footer from "./footer";
+import Messages from "./messages";
 
 function App() {
   return (
@@ -11,13 +12,10 @@ function App() {
         </header>
 
         <div className="header_name">
-          <p>Person</p>
+          <p>General Grevious</p>
         </div>
 
-        <div id="right_bubble">Yes</div>
-        <div id="left_bubble_1">Message 1</div>
-        <div id="left_bubble_2">Message 2</div>
-
+        <Messages />
         <Footer />
       </main>
   );
