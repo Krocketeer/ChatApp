@@ -52,9 +52,7 @@ footer {
 }
 
 footer input {
-  /*border-top: 2px solid rgb(64, 63, 65);*/
   position: absolute;
-  /*bottom: 0px;*/
   height: 30px;
   width: 82%;
   bottom: 12px;
@@ -81,17 +79,6 @@ footer input {
   left: 35px;
   top: -10px;
 }
-
-/*messages {*/
-/*  position: relative;*/
-/*  background: rgb(70, 68, 87);*/
-/*  text-align: left;*/
-/*  padding: 10px;*/
-/*  width: 40%;*/
-/*  top: 50px;*/
-/*  margin: 0 180px 15px 0;*/
-/*  border-radius: 15px;*/
-/*}*/
 
 #left_bubble_1 {
   position: absolute;
