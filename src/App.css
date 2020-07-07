@@ -25,7 +25,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  text-align: right;
 }
 
 header {
@@ -43,7 +43,7 @@ header img {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(103%) contrast(101%);
 }
 
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -51,21 +51,21 @@ footer {
   border-top: 2px solid rgb(64, 63, 65);
 }
 
-footer input {
+.footer input {
   position: absolute;
   height: 30px;
   width: 82%;
   bottom: 12px;
   left: 14px;
   border-radius: 20px;
-  outline: none;
   padding-left: 10px;
+  outline: none;
   border: 1px solid rgb(192, 192, 193);
 }
 
 #message_bar img {
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 0;
   height: 50px;
   bottom: 3px;
@@ -103,13 +103,17 @@ footer input {
 }
 
 #right_bubble {
-  position: absolute;
+  position: relative;
   background: rgb(48, 209, 88);
-  text-align: left;
+  text-align: right;
   padding: 10px 16px 10px 12px;
   right: 10px;
   bottom: 210px;
+  top: 55px;
   border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: auto;
 }
 
 /* https://codepen.io/sosuke/pen/Pjoqqp */
