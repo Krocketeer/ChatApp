@@ -1,11 +1,11 @@
 import React from 'react'
 
 function Messages(props) {
-    return <messages>
-        <div id="right_bubble">
+    return <div className="message">
+        <div id="message_bubble">
             {props.text}
         </div>
-    </messages>
+    </div>
     }
 
 export default Messages

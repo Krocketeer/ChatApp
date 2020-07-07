@@ -16,6 +16,7 @@ body{
   align-items:center;
   background: rgb(26, 26, 27);
   color:white;
+  overflow: hidden;
 }
 
 .main {
@@ -26,10 +27,11 @@ body{
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
+  height: 100%;
 }
 
 header {
-  position: fixed;
+  position: relative;
   display: flex;
   height: 56px;
   width: 100%;
@@ -37,83 +39,80 @@ header {
 }
 
 header img {
-  position: fixed;
+  position: absolute;
   height: 32px;
   margin: 13px 3px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(103%) contrast(101%);
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 56px;
   border-top: 2px solid rgb(64, 63, 65);
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer input {
-  position: absolute;
+  flex: 1;
   height: 30px;
-  width: 82%;
-  bottom: 12px;
-  left: 14px;
   border-radius: 20px;
-  padding-left: 10px;
+  padding-left: 15px;
   outline: none;
   border: 1px solid rgb(192, 192, 193);
+  margin-left: 10px
 }
 
 #message_bar img {
   cursor: pointer;
-  position: absolute;
-  right: 0;
   height: 50px;
-  bottom: 3px;
+  margin-top: 5px;
   filter: invert(70%) sepia(63%) saturate(554%) hue-rotate(76deg) brightness(86%) contrast(93%);
 }
 
 .header_name {
-  position: fixed;
+  position: absolute;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   left: 35px;
   top: -10px;
 }
 
-#left_bubble_1 {
-  position: absolute;
-  background: rgb(70, 68, 87);
-  text-align: left;
-  overflow: auto;
-  padding: 10px 16px 10px 12px;
-  bottom: 140px;
-  margin: 0 0 0 10px;
-  border-radius: 15px;
-}
-
-#left_bubble_2 {
-  position: absolute;
-  background: rgb(70, 68, 87);
-  text-align: left;
-  padding: 10px 16px 10px 12px;
-  overflow: auto;
-  bottom: 70px;
-  margin: 0 0 0 10px;
-  border-radius: 15px;
-}
-
-#right_bubble {
+#message_bubble {
   position: relative;
   background: rgb(48, 209, 88);
   text-align: right;
   padding: 10px 16px 10px 12px;
   right: 10px;
-  bottom: 210px;
-  top: 55px;
   border-radius: 15px;
   display: inline-block;
   margin-bottom: 10px;
   overflow: auto;
 }
+
+.messages {
+  overflow-y: scroll;
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*#other_bubble {*/
+/*  position: absolute;*/
+/*  background: rgb(70, 68, 87);*/
+/*  text-align: left;*/
+/*  overflow: auto;*/
+/*  padding: 10px 16px 10px 12px;*/
+/*  bottom: 140px;*/
+/*  margin: 0 0 0 10px;*/
+/*  border-radius: 15px;*/
+/*}*/
+
+/*.message {*/
+/*  min-height: 100px;*/
+/*}*/
 
 /* https://codepen.io/sosuke/pen/Pjoqqp */
