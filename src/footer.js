@@ -16,7 +16,6 @@ function Footer(props) {
         <div id="message_bar">
             <img src="https://cdn0.iconfinder.com/data/icons/arrows-31/100/arrow-41-512.png"
                  alt="send arrow"
-                // onClick={props.foo}
                 onClick={() => {
                     props.onSend(text)
                     setText("")

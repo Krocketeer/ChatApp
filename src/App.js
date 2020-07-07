@@ -17,9 +17,8 @@ function App() {
             </div>
 
             {messages.map((m, i) => <Messages text={m} key={i} />)}
-            {/*<Messages text="hello there"/>*/}
 
-            <Footer hi="hello"
+            <Footer
                 onSend={(text) => setMessages([...messages, text])}
             />
          </main>
