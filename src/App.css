@@ -22,12 +22,13 @@ body{
 .main {
   flex: 1;
   width: 100%;
-  font-size: 24px;
+  /*font-size: 24px;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
   height: 100%;
+  font-family: "SF Pro Text", sans-serif;
 }
 
 header {
@@ -69,13 +70,13 @@ header img {
 #message_bar img {
   cursor: pointer;
   height: 50px;
-  margin-top: 5px;
+  margin-top: 3px;
   filter: invert(70%) sepia(63%) saturate(554%) hue-rotate(76deg) brightness(86%) contrast(93%);
 }
 
 .header_name {
   position: absolute;
-  font-family: Raleway, sans-serif;
+  font-family: "SF Pro Text", sans-serif;
   font-size: 24px;
   left: 35px;
   top: -10px;
@@ -84,20 +85,25 @@ header img {
 #message_bubble {
   position: relative;
   background: rgb(48, 209, 88);
-  text-align: right;
+  text-align: left;
   padding: 10px 16px 10px 12px;
   right: 10px;
   border-radius: 15px;
   display: inline-block;
   margin-bottom: 10px;
-  overflow: auto;
+  width: auto;
+  max-width: 75%;
+  top: 10px;
+  transform: scaleY(-1);
 }
 
 .messages {
   overflow-y: scroll;
   flex: 1;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  /*flex-direction: column-reverse;*/
+  transform: scaleY(-1);
 }
 
 /*#other_bubble {*/
