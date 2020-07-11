@@ -3,7 +3,8 @@ import './App.css';
 import Footer from "./footer";
 import Messages from "./messages";
 import {initialize, useDatu} from "datu";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
+import NamePicker from "./namePicker";
 
 function App() {
     useEffect(()=>{
@@ -36,6 +37,8 @@ function Room(props) {
             <Footer
                 onSend={text => send({text, room})}
             />
+
+            <NamePicker />
          </main>
   );
 }
