@@ -32,8 +32,6 @@ function Room(props) {
                     onSend={text => send({text})}
                 />
             </header>
-                {/*<NamePicker />*/}
-
 
             <div className="messages">
                 {messages.map((m, i) => <Messages text={m.text} key={i} />)}
