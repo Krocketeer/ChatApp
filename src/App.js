@@ -22,12 +22,17 @@ function Room(props) {
     return (
         <main className="main">
             <header>
-                <img src="https://cdn.iconscout.com/icon/free/png-512/back-arrow-1767523-1502427.png"
-               alt="back arrow"/>
-                <div className="header_name">
+                <div className="back_arrow">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/back-arrow-1767523-1502427.png"
+                         alt="back arrow"/>
                     <p>438 Group Chat</p>
                 </div>
+
+                <NamePicker
+                    onSend={text => send({text})}
+                />
             </header>
+                {/*<NamePicker />*/}
 
 
             <div className="messages">
@@ -37,8 +42,6 @@ function Room(props) {
             <Footer
                 onSend={text => send({text, room})}
             />
-
-            <NamePicker />
          </main>
   );
 }

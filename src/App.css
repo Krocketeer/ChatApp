@@ -1,7 +1,7 @@
 html, #root {
   height: 100%;
   width: 100%;
-  disply: flex;
+  /*display: flex;*/
 }
 
 *{
@@ -37,13 +37,37 @@ header {
   height: 56px;
   width: 100%;
   border-bottom: 2px solid rgb(64, 63, 65);
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header img {
+header > img {
   position: absolute;
   height: 32px;
   margin: 13px 3px;
+}
+
+.back_arrow {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.back_arrow img {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(103%) contrast(101%);
+  height: 32px;
+  margin: 13px 3px;
+}
+
+.back_arrow p {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: left;
+  align-items: center;
+  margin: 0 0 0 -7px;
+  font-size: 22px;
 }
 
 .footer {
@@ -107,27 +131,62 @@ header img {
 }
 
 .name {
-  position: relative;
-  width: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-flow: row nowrap;
+  text-align: right;
+
+}
+
+.name img {
+  height: 24px;
+  width: 24px;
+  margin: 0 6px 0 0;
 }
 
 .name input {
-  flex: 1;
-  height: 25px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+
 }
 
-/*#other_bubble {*/
-/*  position: absolute;*/
-/*  background: rgb(70, 68, 87);*/
-/*  text-align: left;*/
-/*  overflow: auto;*/
-/*  padding: 10px 16px 10px 12px;*/
-/*  bottom: 140px;*/
-/*  margin: 0 0 0 10px;*/
-/*  border-radius: 15px;*/
-/*}*/
+.edit_name_bar {
+  /*position: absolute;*/
+  /*height: 30px;*/
+  /*border-radius: 20px;*/
+  /*padding-left: 15px;*/
+  /*outline: none;*/
+  /*color: white;*/
+  /*background: white;*/
+  /*right: -300px;*/
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(8deg) brightness(103%) contrast(101%);
+}
+
+#edit_icon img {
+  /*position: relative;*/
+  /*height: 24px;*/
+  /*width: 100%;*/
+  /*color: white;*/
+  /*!*right: -150px;*!*/
+  /*margin: -8px 0 0 0;*/
+  /*text-align: right;*/
+  /*top: 22px;*/
+}
+
+#save_icon img {
+  /*position: relative;*/
+  /*height: 24px;*/
+  /*width: 100%;*/
+  /*color: white;*/
+  /*!*right: -132px;*!*/
+  /*margin: -8px 0 0 0;*/
+  /*text-align: right;*/
+  /*top: 22px;*/
+}
 
 /* https://codepen.io/sosuke/pen/Pjoqqp */
